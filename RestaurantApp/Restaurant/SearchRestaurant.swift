@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct SearchRestaurant: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    let model : RestaurantViewModel = .shared
+    @State private var searchText: String = ""
+    @Environment(\.dismiss) var dismiss
+    var filteredRestaurtant: [MapItem]{
+        if searchText.isEmpty{model.restaurant}
+        else{model.restaurant.filter{
+            $0.name.localizedStandardContains(searchText)
+        }}
     }
-}
-
-#Preview {
-    SearchRestaurant()
+    var body: some View {
+        NavigationStack{
+            List(filteredRestaurtant){item in
+                Text(item.name)
+                    .onTapGesture {
+                        model.goto(item.coordinate)
+                        dismiss()
+                    }
+            }
+            .searchable(text: $searchText, prompt: "Search Restaurant")
+        }
+    }
 }

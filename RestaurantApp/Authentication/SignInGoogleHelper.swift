@@ -13,7 +13,6 @@ struct GoogleSignInResultModel{
 }
 
 final class SignInGoogleHelper{
-    
     @MainActor
     func signIn() async throws  -> GoogleSignInResultModel{
         guard let topVC = Uttilities.shared.topViewController() else{

@@ -6,33 +6,126 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		E0A4328B2E0E97A7004D1A10 /* RestaurantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		E02BC5422E1B500F0075B8D2 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02BC5412E1B500F0075B8D2 /* ButtonStyle.swift */; };
+		E02BC5442E1B73540075B8D2 /* SearchRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02BC5432E1B73540075B8D2 /* SearchRestaurant.swift */; };
+		E034D2902E152A6E009AF4DF /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E034D28F2E152A6A009AF4DF /* Contact.swift */; };
+		E034D2922E15327C009AF4DF /* AddContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E034D2912E15327C009AF4DF /* AddContact.swift */; };
+		E042A0B92E1934660030F413 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042A0B82E1934660030F413 /* Color.swift */; };
+		E0935B302E0F80A8005AD0E9 /* MainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0935B2E2E0F80A8005AD0E9 /* MainData.swift */; };
+		E0935B322E0F81A7005AD0E9 /* LogginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0935B312E0F81A7005AD0E9 /* LogginView.swift */; };
+		E0935B342E0F8330005AD0E9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0935B332E0F8330005AD0E9 /* MainView.swift */; };
+		E0935B462E0F9209005AD0E9 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0935B422E0F9209005AD0E9 /* RestaurantView.swift */; };
+		E0935B472E0F9209005AD0E9 /* GeocoderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0935B432E0F9209005AD0E9 /* GeocoderManager.swift */; };
+		E0935B482E0F9209005AD0E9 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0935B442E0F9209005AD0E9 /* LocationService.swift */; };
+		E0935B492E0F9209005AD0E9 /* RestaurantSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0935B452E0F9209005AD0E9 /* RestaurantSheet.swift */; };
+		E0935B522E0F93A4005AD0E9 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0935B512E0F93A4005AD0E9 /* ContactView.swift */; };
+		E0935B542E0F9511005AD0E9 /* UserSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0935B532E0F9511005AD0E9 /* UserSettingView.swift */; };
+		E0935B6E2E0FA6A4005AD0E9 /* MapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0935B6D2E0FA6A4005AD0E9 /* MapItem.swift */; };
+		E0A4329D2E0E9880004D1A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A432992E0E9880004D1A10 /* Assets.xcassets */; };
+		E0A4329E2E0E9880004D1A10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4329A2E0E9880004D1A10 /* ContentView.swift */; };
+		E0A4329F2E0E9880004D1A10 /* RestaurantAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A4329B2E0E9880004D1A10 /* RestaurantAppApp.swift */; };
+		E0A432A32E0E98C5004D1A10 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E0A432A22E0E98C5004D1A10 /* GoogleSignIn */; };
+		E0A432A52E0E98C5004D1A10 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E0A432A42E0E98C5004D1A10 /* GoogleSignInSwift */; };
+		E0A432A72E0E9986004D1A10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0A432A62E0E9986004D1A10 /* GoogleService-Info.plist */; };
+		E0A432AB2E0E9C2F004D1A10 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = E0A432AA2E0E9C2F004D1A10 /* FirebaseCore */; };
+		E0A432AD2E0E9C2F004D1A10 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E0A432AC2E0E9C2F004D1A10 /* FirebaseDatabase */; };
+		E0A432AF2E0E9C71004D1A10 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E0A432AE2E0E9C71004D1A10 /* FirebaseAuth */; };
+		E0A432B12E0E9ECE004D1A10 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A432B02E0E9ECE004D1A10 /* AuthenticationManager.swift */; };
+		E0A432B32E0EA2DE004D1A10 /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A432B22E0EA2DD004D1A10 /* SignInGoogleHelper.swift */; };
+		E0A432B62E0EA31A004D1A10 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A432B52E0EA31A004D1A10 /* Utilities.swift */; };
+		E0D1F9C02E161073005B07F0 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D1F9BF2E161073005B07F0 /* UserData.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		E0A4328D2E0E97A7004D1A10 /* RestaurantApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RestaurantApp;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		E02BC5412E1B500F0075B8D2 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		E02BC5432E1B73540075B8D2 /* SearchRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRestaurant.swift; sourceTree = "<group>"; };
+		E034D28F2E152A6A009AF4DF /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		E034D2912E15327C009AF4DF /* AddContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContact.swift; sourceTree = "<group>"; };
+		E042A0B82E1934660030F413 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E0935B2E2E0F80A8005AD0E9 /* MainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainData.swift; sourceTree = "<group>"; };
+		E0935B312E0F81A7005AD0E9 /* LogginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogginView.swift; sourceTree = "<group>"; };
+		E0935B332E0F8330005AD0E9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E0935B422E0F9209005AD0E9 /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
+		E0935B432E0F9209005AD0E9 /* GeocoderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderManager.swift; sourceTree = "<group>"; };
+		E0935B442E0F9209005AD0E9 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		E0935B452E0F9209005AD0E9 /* RestaurantSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantSheet.swift; sourceTree = "<group>"; };
+		E0935B512E0F93A4005AD0E9 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		E0935B532E0F9511005AD0E9 /* UserSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingView.swift; sourceTree = "<group>"; };
+		E0935B6D2E0FA6A4005AD0E9 /* MapItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItem.swift; sourceTree = "<group>"; };
+		E0A4328B2E0E97A7004D1A10 /* RestaurantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0A432992E0E9880004D1A10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0A4329A2E0E9880004D1A10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E0A4329B2E0E9880004D1A10 /* RestaurantAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAppApp.swift; sourceTree = "<group>"; };
+		E0A432A62E0E9986004D1A10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E0A432A82E0E9BB0004D1A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E0A432B02E0E9ECE004D1A10 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		E0A432B22E0EA2DD004D1A10 /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
+		E0A432B52E0EA31A004D1A10 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E0D1F9BF2E161073005B07F0 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E0A432882E0E97A7004D1A10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A432A32E0E98C5004D1A10 /* GoogleSignIn in Frameworks */,
+				E0A432AF2E0E9C71004D1A10 /* FirebaseAuth in Frameworks */,
+				E0A432AB2E0E9C2F004D1A10 /* FirebaseCore in Frameworks */,
+				E0A432AD2E0E9C2F004D1A10 /* FirebaseDatabase in Frameworks */,
+				E0A432A52E0E98C5004D1A10 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E042A0B72E1934560030F413 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E042A0B82E1934660030F413 /* Color.swift */,
+				E02BC5412E1B500F0075B8D2 /* ButtonStyle.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E0935B2F2E0F80A8005AD0E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E0935B2E2E0F80A8005AD0E9 /* MainData.swift */,
+				E0D1F9BF2E161073005B07F0 /* UserData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E0935B352E0F91A1005AD0E9 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				E0935B422E0F9209005AD0E9 /* RestaurantView.swift */,
+				E0935B6D2E0FA6A4005AD0E9 /* MapItem.swift */,
+				E02BC5432E1B73540075B8D2 /* SearchRestaurant.swift */,
+				E0935B432E0F9209005AD0E9 /* GeocoderManager.swift */,
+				E0935B442E0F9209005AD0E9 /* LocationService.swift */,
+				E0935B452E0F9209005AD0E9 /* RestaurantSheet.swift */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		E0935B4A2E0F9380005AD0E9 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				E0935B512E0F93A4005AD0E9 /* ContactView.swift */,
+				E034D28F2E152A6A009AF4DF /* Contact.swift */,
+				E034D2912E15327C009AF4DF /* AddContact.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
 		E0A432822E0E97A7004D1A10 = {
 			isa = PBXGroup;
 			children = (
-				E0A4328D2E0E97A7004D1A10 /* RestaurantApp */,
+				E0A4329C2E0E9880004D1A10 /* RestaurantApp */,
 				E0A4328C2E0E97A7004D1A10 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +136,44 @@
 				E0A4328B2E0E97A7004D1A10 /* RestaurantApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E0A4329C2E0E9880004D1A10 /* RestaurantApp */ = {
+			isa = PBXGroup;
+			children = (
+				E0A432A82E0E9BB0004D1A10 /* Info.plist */,
+				E0A432B72E0EA32F004D1A10 /* Uttilities */,
+				E0A432B42E0EA2E4004D1A10 /* Authentication */,
+				E0A432992E0E9880004D1A10 /* Assets.xcassets */,
+				E0A4329A2E0E9880004D1A10 /* ContentView.swift */,
+				E0935B332E0F8330005AD0E9 /* MainView.swift */,
+				E0935B532E0F9511005AD0E9 /* UserSettingView.swift */,
+				E0935B4A2E0F9380005AD0E9 /* Contact */,
+				E0935B352E0F91A1005AD0E9 /* Restaurant */,
+				E0935B2F2E0F80A8005AD0E9 /* Data */,
+				E0A4329B2E0E9880004D1A10 /* RestaurantAppApp.swift */,
+				E0A432A62E0E9986004D1A10 /* GoogleService-Info.plist */,
+			);
+			path = RestaurantApp;
+			sourceTree = "<group>";
+		};
+		E0A432B42E0EA2E4004D1A10 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E0A432B02E0E9ECE004D1A10 /* AuthenticationManager.swift */,
+				E0A432B22E0EA2DD004D1A10 /* SignInGoogleHelper.swift */,
+				E0935B312E0F81A7005AD0E9 /* LogginView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E0A432B72E0EA32F004D1A10 /* Uttilities */ = {
+			isa = PBXGroup;
+			children = (
+				E0A432B52E0EA31A004D1A10 /* Utilities.swift */,
+				E042A0B72E1934560030F413 /* Extension */,
+			);
+			path = Uttilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,11 +191,13 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				E0A4328D2E0E97A7004D1A10 /* RestaurantApp */,
-			);
 			name = RestaurantApp;
 			packageProductDependencies = (
+				E0A432A22E0E98C5004D1A10 /* GoogleSignIn */,
+				E0A432A42E0E98C5004D1A10 /* GoogleSignInSwift */,
+				E0A432AA2E0E9C2F004D1A10 /* FirebaseCore */,
+				E0A432AC2E0E9C2F004D1A10 /* FirebaseDatabase */,
+				E0A432AE2E0E9C71004D1A10 /* FirebaseAuth */,
 			);
 			productName = RestaurantApp;
 			productReference = E0A4328B2E0E97A7004D1A10 /* RestaurantApp.app */;
@@ -94,6 +227,10 @@
 			);
 			mainGroup = E0A432822E0E97A7004D1A10;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E0A432A12E0E98C5004D1A10 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				E0A432A92E0E9C2F004D1A10 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E0A4328C2E0E97A7004D1A10 /* Products */;
 			projectDirPath = "";
@@ -109,6 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A4329D2E0E9880004D1A10 /* Assets.xcassets in Resources */,
+				E0A432A72E0E9986004D1A10 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +258,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A432B32E0EA2DE004D1A10 /* SignInGoogleHelper.swift in Sources */,
+				E0935B342E0F8330005AD0E9 /* MainView.swift in Sources */,
+				E0A432B12E0E9ECE004D1A10 /* AuthenticationManager.swift in Sources */,
+				E0A4329E2E0E9880004D1A10 /* ContentView.swift in Sources */,
+				E034D2902E152A6E009AF4DF /* Contact.swift in Sources */,
+				E0935B522E0F93A4005AD0E9 /* ContactView.swift in Sources */,
+				E0935B6E2E0FA6A4005AD0E9 /* MapItem.swift in Sources */,
+				E0A432B62E0EA31A004D1A10 /* Utilities.swift in Sources */,
+				E0935B302E0F80A8005AD0E9 /* MainData.swift in Sources */,
+				E0A4329F2E0E9880004D1A10 /* RestaurantAppApp.swift in Sources */,
+				E034D2922E15327C009AF4DF /* AddContact.swift in Sources */,
+				E02BC5442E1B73540075B8D2 /* SearchRestaurant.swift in Sources */,
+				E042A0B92E1934660030F413 /* Color.swift in Sources */,
+				E0935B462E0F9209005AD0E9 /* RestaurantView.swift in Sources */,
+				E02BC5422E1B500F0075B8D2 /* ButtonStyle.swift in Sources */,
+				E0D1F9C02E161073005B07F0 /* UserData.swift in Sources */,
+				E0935B472E0F9209005AD0E9 /* GeocoderManager.swift in Sources */,
+				E0935B482E0F9209005AD0E9 /* LocationService.swift in Sources */,
+				E0935B492E0F9209005AD0E9 /* RestaurantSheet.swift in Sources */,
+				E0935B542E0F9511005AD0E9 /* UserSettingView.swift in Sources */,
+				E0935B322E0F81A7005AD0E9 /* LogginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,11 +416,15 @@
 				DEVELOPMENT_TEAM = W5269VLKFY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestaurantApp/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "\"Need Contact\"";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need Your Location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +448,15 @@
 				DEVELOPMENT_TEAM = W5269VLKFY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestaurantApp/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "\"Need Contact\"";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need Your Location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +492,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E0A432A12E0E98C5004D1A10 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		E0A432A92E0E9C2F004D1A10 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E0A432A22E0E98C5004D1A10 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A432A12E0E98C5004D1A10 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		E0A432A42E0E98C5004D1A10 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A432A12E0E98C5004D1A10 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		E0A432AA2E0E9C2F004D1A10 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A432A92E0E9C2F004D1A10 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		E0A432AC2E0E9C2F004D1A10 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A432A92E0E9C2F004D1A10 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E0A432AE2E0E9C71004D1A10 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A432A92E0E9C2F004D1A10 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E0A432832E0E97A7004D1A10 /* Project object */;
 }

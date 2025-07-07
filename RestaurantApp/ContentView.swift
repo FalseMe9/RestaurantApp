@@ -4,18 +4,33 @@
 //
 //  Created by Billie Hartanto on 27/06/25.
 //
-
+import FirebaseCore
+import FirebaseAuth
+import GoogleSignIn
 import SwiftUI
+import GoogleSignInSwift
+
+
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+    @State private var main = MainData.shared
+    var body: some View{
+        ZStack{
+            if let user = main.user{
+                MainView(user: user)
+            }
         }
-        .padding()
+        .onAppear{
+            Task{
+                let user = try AuthenticationManager.shared.getCurrentUser()
+                main.user = UserData(user: user)
+                await main.user?.load()
+                main.showCoverPage = main.user == nil
+            }
+        }
+        .fullScreenCover(isPresented: $main.showCoverPage){
+            LogginView()
+        }
     }
 }
 
